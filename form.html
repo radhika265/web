@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <center>
+            <title>Registration Form</title>
+            <style>
+                #Confirmation{
+                    text-align: center;
+                    display: none;
+                }
+            </style>
+    </head>
+    <body>
+        <div id="registration Form">
+            <h1>Registration Form</h1>
+            <hr>
+            <br/>
+            <form>
+                usename:<input type="text" id="t1">
+                password:<input type="password" id="t2">
+                <input type="button" id="submit" value="submit" onclick="submitform()"/>
+            </form>
+        </div>
+        <div id="Confirmation">
+            <h2>Thank you for registration</h2>
+        </div>
+    </center>
+    </body>
+    <script>
+        function submitform(){
+            document.getElementById("registration Form").style.display='none';
+            document.getElementById("Confirmation").style.display='block';
+        }
+    </script>
+
+</html>

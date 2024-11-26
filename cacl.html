@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <center>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="Calculator">
+            <input id="num1" type="number">
+            <input id="num2" type="number">
+            <div>
+                <button onclick="calc('+')">Add</button>
+                <button onclick="calc('-')">Sub</button>
+                <button onclick="calc('*')">Mul</button>
+                <button onclick="calc('/')">Div</button>
+            </div>
+            <input id="result" value="result">
+        </div>
+    </center>
+    </body>
+    <script>
+        function calc(op){
+            var num1=document.getElementById("num1").value
+            var num2=document.getElementById("num2").value
+            var result=eval(num1+op+num2)
+            document.getElementById("result").value=result;
+        }
+    </script>
+    
+</html>
